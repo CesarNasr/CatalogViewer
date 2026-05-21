@@ -1,6 +1,5 @@
-package com.cesar.catalogviewer.ui.theme
+package com.cesar.catalogviewer.presentation.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

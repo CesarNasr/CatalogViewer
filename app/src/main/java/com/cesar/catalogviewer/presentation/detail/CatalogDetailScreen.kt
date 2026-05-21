@@ -24,9 +24,11 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.cesar.catalogviewer.R
 import com.cesar.catalogviewer.presentation.components.ErrorState
 import com.cesar.catalogviewer.presentation.formatter.formatPrice
 import com.cesar.catalogviewer.presentation.formatter.formatRating
@@ -67,7 +69,7 @@ fun CatalogDetailScreen(
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = "Item details")
+                    Text(text = stringResource(R.string.title_item_details))
                 },
                 navigationIcon = {
                     IconButton(
@@ -77,7 +79,7 @@ fun CatalogDetailScreen(
                     ) {
                         Icon(
                             imageVector = Icons.Filled.ArrowBack,
-                            contentDescription = "Go back"
+                            contentDescription = stringResource(R.string.go_back)
                         )
                     }
                 }
@@ -166,17 +168,17 @@ fun CatalogDetailScreen(
                     }
 
                     DetailRow(
-                        label = "ID",
+                        label = stringResource(R.string.id),
                         value = item.id
                     )
 
                     DetailRow(
-                        label = "Price",
+                        label = stringResource(R.string.price),
                         value = formatPrice(item.price)
                     )
 
                     DetailRow(
-                        label = "Rating",
+                        label = stringResource(R.string.rating),
                         value = formatRating(item.rating)
                     )
 

@@ -1,12 +1,11 @@
-package com.cesar.catalogviewer
+package com.cesar.catalogviewer.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.cesar.catalogviewer.presentation.list.CatalogListRoute
 import com.cesar.catalogviewer.presentation.navigation.AppNavigation
-import com.cesar.catalogviewer.ui.theme.CatalogViewerTheme
+import com.cesar.catalogviewer.presentation.ui.theme.CatalogViewerTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

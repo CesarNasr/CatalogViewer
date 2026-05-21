@@ -19,9 +19,11 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.cesar.catalogviewer.R
 import com.cesar.catalogviewer.presentation.components.CatalogItemCard
 import com.cesar.catalogviewer.presentation.components.CatalogSearchField
 import com.cesar.catalogviewer.presentation.components.EmptyState
@@ -58,7 +60,7 @@ fun CatalogListScreen(
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = "Catalog Viewer")
+                    Text(text = stringResource(R.string.title_catalog_viewer))
                 }
             )
         }

@@ -1,4 +1,4 @@
-package com.cesar.catalogviewer.ui.theme
+package com.cesar.catalogviewer.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -17,8 +17,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
+import com.cesar.catalogviewer.R
 import com.cesar.catalogviewer.domain.model.CatalogItem
 import com.cesar.catalogviewer.presentation.formatter.formatPrice
 import com.cesar.catalogviewer.presentation.formatter.formatRating
@@ -75,9 +77,9 @@ fun CatalogItemCard(
                         Icons.Outlined.FavoriteBorder
                     },
                     contentDescription = if (item.isFavorite) {
-                        "Remove from favorites"
+                        stringResource(R.string.remove_from_favorites)
                     } else {
-                        "Add to favorites"
+                        stringResource(R.string.add_to_favorites)
                     },
                     tint = if (item.isFavorite) {
                         MaterialTheme.colorScheme.primary
